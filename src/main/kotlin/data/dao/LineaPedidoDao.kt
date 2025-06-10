@@ -3,6 +3,7 @@ package prgog2425.dam1.RepoGit.data.dao
 import prgog2425.dam1.RepoGit.data.bd.Database
 import java.sql.Connection
 import java.sql.PreparedStatement
+import java.sql.ResultSet
 import java.sql.SQLException
 
 class LineaPedidoDao: ILineaPedidoDao {
@@ -70,13 +71,23 @@ class LineaPedidoDao: ILineaPedidoDao {
     override fun mostrarLineaPedido(id:Int): Boolean {
         var connection: Connection? = Database.getConexion()
         var stmt: PreparedStatement? = null
+        var rs: ResultSet? = null
 
         try {
             if (connection != null) {
-                stmt = connection.prepareStatement("""SELECT * FROM LINEAPEDIDO WHERE IDPEDIDO = ?""")
+                stmt = connection.prepareStatement("""SELECT * FROM LINEAPEDIDO WHERE ID = ?""")
 
                 stmt.setInt(1,id)
-                stmt.executeUpdate()
+
+                rs =stmt.executeQuery()
+                while (rs.next()){
+                    val id = rs.getInt("ID")
+                    val cantidad = rs.getInt("CANTIDAD")
+                    val precio = rs.getDouble("PRECIO")
+                    val IDPEDID = rs.getInt("IDPEDIDO")
+                    val IDPRODUCTO = rs.getInt("IDPRODUCTO")
+                    println("Id: $id, cantidad: $cantidad, precio: $precio, idpedido: $IDPEDID, idproducto: $IDPRODUCTO")
+                }
             }
         }catch (e: SQLException){
             println(e.message)

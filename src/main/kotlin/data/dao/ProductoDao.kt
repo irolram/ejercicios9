@@ -155,8 +155,8 @@ class ProductoDao: IProductoDao {
             try {
 
                 stmt = connection.prepareStatement("""UPDATE PRODUCTO SET NOMBRE = ? WHERE ID = ?""")
-                stmt.setInt(1, id)
-                stmt.setString(2, nombre)
+                stmt.setString(1, nombre)
+                stmt.setInt(2, id)
                 stmt.executeUpdate()
 
             }catch (e: SQLException){
@@ -176,7 +176,7 @@ class ProductoDao: IProductoDao {
         var stmt: PreparedStatement? = null
         try {
             if (connection != null) {
-                stmt = connection.prepareStatement("""UPDATE PRODUCTO SET PRECIO = PRECIO * 2 WHERE NOMBRE = ?º""")
+                stmt = connection.prepareStatement("""UPDATE PRODUCTO SET PRECIO = PRECIO * 2 WHERE NOMBRE = ?""")
 
                 stmt.setString(1, nombre)
                 stmt.executeUpdate()
