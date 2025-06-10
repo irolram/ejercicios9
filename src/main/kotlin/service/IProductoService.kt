@@ -1,8 +1,7 @@
-package prgog2425.dam1.RepoGit.data.dao
+package prgog2425.dam1.RepoGit.service
 
-interface IProductoDao {
+interface IProductoService {
 
-    fun crearTabla():Boolean
     fun insertarProducto(nombre: String, precio:Double, stock:Int):Boolean
     fun mostrarProductoUsuario(nombre:String):Boolean
     fun eliminarProducto(precio:Double): Boolean

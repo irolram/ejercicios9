@@ -146,5 +146,50 @@ class ProductoDao: IProductoDao {
         return true
     }
 
+    override fun modificarProductoNombre(id:Int, nombre: String): Boolean {
 
+        var connection: Connection? = Database.getConexion()
+        var stmt: PreparedStatement? = null
+
+        if (connection != null) {
+            try {
+
+                stmt = connection.prepareStatement("""UPDATE PRODUCTO SET NOMBRE = ? WHERE ID = ?""")
+                stmt.setInt(1, id)
+                stmt.setString(2, nombre)
+                stmt.executeUpdate()
+
+            }catch (e: SQLException){
+                println(e.message)
+                return false
+            }finally {
+                stmt?.close()
+                Database.closeConnection(connection)
+            }
+        }
+        return true
+    }
+
+    override fun modificarPrecioDoble(nombre: String): Boolean {
+
+        var connection:Connection? = Database.getConexion()
+        var stmt: PreparedStatement? = null
+        try {
+            if (connection != null) {
+                stmt = connection.prepareStatement("""UPDATE PRODUCTO SET PRECIO = PRECIO * 2 WHERE NOMBRE = ?º""")
+
+                stmt.setString(1, nombre)
+                stmt.executeUpdate()
+
+            }
+        }catch (e:SQLException){
+            println(e.message)
+            return false
+        }finally {
+
+            stmt?.close()
+            Database.closeConnection(connection)
+        }
+        return true
+    }
 }
