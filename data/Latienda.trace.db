@@ -1,0 +1,1497 @@
+2025-06-05 18:56:53.764171+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS LINEAPEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+CANTIDAD INTEGER NOT NULL,
+PRECIO DECIMAL NOT NULL,
+IDPEDIDO INTEGER NOT NULL,
+IDPRODUCTO INTEGER NOT NULL,
+FOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE
+FOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:56:53.903634+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+PRECIOTOTAL DECIMAL NOT NULL,
+IDUSUARIO INTEGER NOT NULL,
+FOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:56:54.070185+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS USUARIO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+EMAIL VARCHAR NOT NULL
+) [42001-224]
+2025-06-05 18:56:54.232723+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PRODUCTO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+PRECIO DECIMAL NOT NULL,
+STOCK INTEGER NOT NULL
+) [42001-224]
+2025-06-05 18:56:54.413321+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS LINEAPEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+CANTIDAD INTEGER NOT NULL,
+PRECIO DECIMAL NOT NULL,
+IDPEDIDO INTEGER NOT NULL,
+IDPRODUCTO INTEGER NOT NULL,
+FOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE
+FOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:56:54.569838+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+PRECIOTOTAL DECIMAL NOT NULL,
+IDUSUARIO INTEGER NOT NULL,
+FOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:56:54.755453+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS USUARIO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+EMAIL VARCHAR NOT NULL
+) [42001-224]
+2025-06-05 18:56:54.908960+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PRODUCTO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+PRECIO DECIMAL NOT NULL,
+STOCK INTEGER NOT NULL
+) [42001-224]
+2025-06-05 18:57:41.575204+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS LINEAPEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+CANTIDAD INTEGER NOT NULL,
+PRECIO DECIMAL NOT NULL,
+IDPEDIDO INTEGER NOT NULL,
+IDPRODUCTO INTEGER NOT NULL,
+FOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE
+FOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:57:41.783892+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+PRECIOTOTAL DECIMAL NOT NULL,
+IDUSUARIO INTEGER NOT NULL,
+FOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:57:41.945427+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS USUARIO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+EMAIL VARCHAR NOT NULL
+) [42001-224]
+2025-06-05 18:57:42.148097+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PRODUCTO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+PRECIO DECIMAL NOT NULL,
+STOCK INTEGER NOT NULL
+) [42001-224]
+2025-06-05 18:58:19.783570+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS USUARIO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aEMAIL VARCHAR NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS USUARIO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+EMAIL VARCHAR NOT NULL
+) [42001-224]
+2025-06-05 18:58:19.934068+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PRODUCTO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aNOMBRE VARCHAR NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aSTOCK INTEGER NOT NULL\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PRODUCTO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+NOMBRE VARCHAR NOT NULL,
+PRECIO DECIMAL NOT NULL,
+STOCK INTEGER NOT NULL
+) [42001-224]
+2025-06-05 18:58:20.145769+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aPRECIOTOTAL DECIMAL NOT NULL,\000aIDUSUARIO INTEGER NOT NULL,\000aFOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+PRECIOTOTAL DECIMAL NOT NULL,
+IDUSUARIO INTEGER NOT NULL,
+FOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:58:20.313324+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY [*]AUTOINCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000aFOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS LINEAPEDIDO (
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+CANTIDAD INTEGER NOT NULL,
+PRECIO DECIMAL NOT NULL,
+IDPEDIDO INTEGER NOT NULL,
+IDPRODUCTO INTEGER NOT NULL,
+FOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE
+FOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-05 18:59:40.860726+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "KEY"
+Unknown data type: "KEY"; SQL statement:
+CREATE TABLE IF NOT EXISTS PEDIDO (
+ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+PRECIOTOTAL DECIMAL NOT NULL,
+IDUSUARIO INTEGER NOT NULL,
+FOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        
+) [50004-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:5866)
+	at org.h2.command.Parser.readIfDataType(Parser.java:5704)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5686)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5565)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8999)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8939)
+	at org.h2.command.Parser.parseCreate(Parser.java:6404)
+	at org.h2.command.Parser.parsePrepared(Parser.java:666)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.crearTabla(PedidoDao.kt:20)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.<init>(PedidoDao.kt:11)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:18)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-05 18:59:40.964069+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "KEY"
+Unknown data type: "KEY"; SQL statement:
+CREATE TABLE IF NOT EXISTS LINEAPEDIDO (
+ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+CANTIDAD INTEGER NOT NULL,
+PRECIO DECIMAL NOT NULL,
+IDPEDIDO INTEGER NOT NULL,
+IDPRODUCTO INTEGER NOT NULL,
+FOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE
+FOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        
+) [50004-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:5866)
+	at org.h2.command.Parser.readIfDataType(Parser.java:5704)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5686)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5565)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8999)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8939)
+	at org.h2.command.Parser.parseCreate(Parser.java:6404)
+	at org.h2.command.Parser.parsePrepared(Parser.java:666)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.crearTabla(LineaPedidoDao.kt:20)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.<init>(LineaPedidoDao.kt:11)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:19)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-05 19:01:11.638554+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "KEY"
+Unknown data type: "KEY"; SQL statement:
+CREATE TABLE IF NOT EXISTS PEDIDO (
+ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+PRECIOTOTAL DECIMAL NOT NULL,
+IDUSUARIO INTEGER NOT NULL,
+FOREING KEY (IDUSUARIO) REFERENCES USUARIO(ID) ON DELETE CASCADE        
+) [50004-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:5866)
+	at org.h2.command.Parser.readIfDataType(Parser.java:5704)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5686)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5565)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8999)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8939)
+	at org.h2.command.Parser.parseCreate(Parser.java:6404)
+	at org.h2.command.Parser.parsePrepared(Parser.java:666)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.crearTabla(PedidoDao.kt:20)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.<init>(PedidoDao.kt:11)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:17)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-05 19:01:11.840222+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "KEY"
+Unknown data type: "KEY"; SQL statement:
+CREATE TABLE IF NOT EXISTS LINEAPEDIDO (
+ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+CANTIDAD INTEGER NOT NULL,
+PRECIO DECIMAL NOT NULL,
+IDPEDIDO INTEGER NOT NULL,
+IDPRODUCTO INTEGER NOT NULL,
+FOREING KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE
+FOREING KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        
+) [50004-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:5866)
+	at org.h2.command.Parser.readIfDataType(Parser.java:5704)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5686)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5565)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8999)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8939)
+	at org.h2.command.Parser.parseCreate(Parser.java:6404)
+	at org.h2.command.Parser.parsePrepared(Parser.java:666)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.crearTabla(LineaPedidoDao.kt:20)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.<init>(LineaPedidoDao.kt:11)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:18)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-05 19:02:18.382580+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY AUTO_INCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREIGN KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000a[*]FOREIGN KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; se esperaba "ON, NOT DEFERRABLE, DEFERRABLE, NOCHECK, CHECK, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS LINEAPEDIDO (\000aID INTEGER PRIMARY KEY AUTO_INCREMENT,\000aCANTIDAD INTEGER NOT NULL,\000aPRECIO DECIMAL NOT NULL,\000aIDPEDIDO INTEGER NOT NULL,\000aIDPRODUCTO INTEGER NOT NULL,\000aFOREIGN KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE\000a[*]FOREIGN KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        \000a)"; expected "ON, NOT DEFERRABLE, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS LINEAPEDIDO (
+ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+CANTIDAD INTEGER NOT NULL,
+PRECIO DECIMAL NOT NULL,
+IDPEDIDO INTEGER NOT NULL,
+IDPRODUCTO INTEGER NOT NULL,
+FOREIGN KEY (IDPEDIDO) REFERENCES PEDIDO(ID) ON DELETE CASCADE
+FOREIGN KEY (IDPRODUCTO) REFERENCES PRODUCTO(ID) ON DELETE CASCADE        
+) [42001-224]
+2025-06-06 18:21:32.205440+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; expected "INSERT"; SQL statement:
+IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [42001-224]
+2025-06-06 18:21:32.502933+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; expected "INSERT"; SQL statement:
+IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [42001-224]
+2025-06-06 18:21:32.782868+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; expected "INSERT"; SQL statement:
+IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [42001-224]
+2025-06-06 18:21:33.057790+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "[*]IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?)"; expected "INSERT"; SQL statement:
+IINSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [42001-224]
+2025-06-06 16:23:27.809637Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:23:34.163430Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:23:48.004492Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:23:52.081637Z jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:23:53.802595Z jdbc[5]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:23:55.727658Z jdbc[6]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:24:18.880308Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:24:21.424904Z jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:24:23.845365Z jdbc[5]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:24:27.505678Z jdbc[6]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:24:29.541874Z jdbc[7]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 18:26:37.007613+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#1" no está fijado
+Parameter "#1" is not set; SQL statement:
+INSERT INTO PEDIDO (PRECIOTOTAL, IDUSUARIO) VALUES (?,?) [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.insertarPedido(PedidoDao.kt:49)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:28)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-06 18:26:37.286536+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#1" no está fijado
+Parameter "#1" is not set; SQL statement:
+INSERT INTO PEDIDO (PRECIOTOTAL, IDUSUARIO) VALUES (?,?) [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.insertarPedido(PedidoDao.kt:49)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:29)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-06 18:26:37.562461+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#1" no está fijado
+Parameter "#1" is not set; SQL statement:
+INSERT INTO PEDIDO (PRECIOTOTAL, IDUSUARIO) VALUES (?,?) [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.insertarPedido(PedidoDao.kt:49)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:30)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-06 18:26:37.836875+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#1" no está fijado
+Parameter "#1" is not set; SQL statement:
+INSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.insertarLineaPedido(LineaPedidoDao.kt:53)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:32)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-06 18:26:38.107783+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#1" no está fijado
+Parameter "#1" is not set; SQL statement:
+INSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.insertarLineaPedido(LineaPedidoDao.kt:53)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:33)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-06 18:26:38.389730+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#1" no está fijado
+Parameter "#1" is not set; SQL statement:
+INSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.insertarLineaPedido(LineaPedidoDao.kt:53)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:34)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-06 18:26:38.656614+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#1" no está fijado
+Parameter "#1" is not set; SQL statement:
+INSERT INTO LINEAPEDIDO (CANTIDAD, PRECIO, IDPEDIDO, IDPRODUCTO) VALUES  (?,?,?,?) [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.insertarLineaPedido(LineaPedidoDao.kt:53)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:35)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-06 16:26:52.127312Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:28:49.001986Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:29:16.113726Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:29:21.717356Z jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:29:31.699865Z jdbc[5]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 16:29:38.258222Z jdbc[6]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 17:25:46.373223Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 17:48:31.590749Z jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-06 18:10:16.851451Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-07 15:32:49.584104Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-09 17:02:21.698199Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:19:12.235992Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:21:03.059785Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 18:21:27.675023+02:00 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.2.224/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at prgog2425.dam1.RepoGit.data.bd.Database.getConexion(Database.kt:25)
+	at prgog2425.dam1.RepoGit.data.dao.PedidoDao.mostrarImporteTotal(PedidoDao.kt:68)
+	at prgog2425.dam1.RepoGit.service.PedidoService.mostrarImporteTotal(PedidoService.kt:24)
+	at prgog2425.dam1.RepoGit.app.Controlador.menuPedido(Controlador.kt:90)
+	at prgog2425.dam1.RepoGit.app.Controlador.menuPrincipal(Controlador.kt:31)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:22)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.2.224/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2025-06-10 16:23:43.391542Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:24:19.055529Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:24:23.358111Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:24:27.505855Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:24:44.507453Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:24:46.784072Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:24:49.660640Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:25:11.232599Z database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:790)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:153)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 32 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 26 more
+2025-06-10 16:25:22.235130Z database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:790)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:153)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 32 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 26 more
+2025-06-10 16:25:27.687894Z database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:790)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:153)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 32 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 26 more
+2025-06-10 18:25:44.238398+02:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "Coca colo"
+Data conversion error converting "Coca colo"; SQL statement:
+UPDATE PRODUCTO SET NOMBRE = ? WHERE ID = ? [22018-224]
+2025-06-10 18:26:37.496969+02:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE PRODUCTO SET PRECIO = PRECIO * 2 WHERE NOMBRE = ?[*]º"
+Syntax error in SQL statement "UPDATE PRODUCTO SET PRECIO = PRECIO * 2 WHERE NOMBRE = ?[*]º"; SQL statement:
+UPDATE PRODUCTO SET PRECIO = PRECIO * 2 WHERE NOMBRE = ?º [42000-224]
+2025-06-10 16:27:26.542903Z database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:790)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:153)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 32 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 26 more
+2025-06-10 16:27:36.827161Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 18:27:58.326947+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Metodo no permitido en un query. Use execute ó executeQuery en lugar de executeUpdate
+Method is not allowed for a query. Use execute or executeQuery instead of executeUpdate; SQL statement:
+SELECT * FROM LINEAPEDIDO WHERE IDPEDIDO = ? [90001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.Prepared.update(Prepared.java:244)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at prgog2425.dam1.RepoGit.data.dao.LineaPedidoDao.mostrarLineaPedido(LineaPedidoDao.kt:79)
+	at prgog2425.dam1.RepoGit.service.LineaPedidoService.mostrarLineaPedido(LineaPedidoService.kt:27)
+	at prgog2425.dam1.RepoGit.app.Controlador.menuLineaPedido(Controlador.kt:165)
+	at prgog2425.dam1.RepoGit.app.Controlador.menuPrincipal(Controlador.kt:33)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt:22)
+	at prgog2425.dam1.RepoGit.MainKt.main(Main.kt)
+2025-06-10 16:28:44.309818Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:28:46.439670Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:30:45.789644Z database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:790)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:153)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 32 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ztech/Desktop/RepoGit/Pruebas programacion/ejercicios9/data/Latienda.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 26 more
+2025-06-10 16:41:54.252471Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:43:09.067502Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:43:23.275543Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:43:29.094459Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:43:42.697856Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-10 16:43:59.103380Z jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
